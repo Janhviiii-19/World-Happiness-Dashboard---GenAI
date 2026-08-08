@@ -6,6 +6,32 @@ Interactive Plotly dashboard analyzing the 2016 World Happiness Report. Explores
 
 The World Happiness Report ranks countries by self-reported well-being and breaks down the score into contributing factors such as economic output, social support, health, freedom, trust in government, and generosity. This project cleans the 2016 dataset, examines the relationships between those factors, and packages the findings into a single interactive HTML dashboard.
 
+## Tools Used
+Here's the full toolset used across this project:
+
+## Python Libraries
+
+| Tool | Purpose |
+|---|---|
+| **pandas** | Reading the CSV, cleaning data (whitespace stripping, NaN handling, dtype conversion, mean imputation), aggregating (`groupby`) for the pie chart |
+| **numpy** | Numeric type checks and NaN handling during cleaning |
+| **plotly.express** | High-level chart creation — scatter plot (fig3), pie chart (fig4), choropleth map (fig5), correlation heatmap (fig2 via `px.imshow`) |
+| **plotly.graph_objects** | Lower-level bar chart construction (fig1) |
+| **plotly.io** | Exporting figures to HTML and combining them into the final `dashboard.html` |
+
+## Environment / Platform
+
+- **Google Colab** — where you're running the notebook (based on the `/content/drive/MyDrive/...` file path and `google.colab.files.download()` usage)
+- **Google Drive** — source of the `2016.csv` dataset
+- 
+## Data Source
+
+- **Kaggle** — origin of the `2016.csv` World Happiness Report dataset
+
+---
+
+If you meant something different by "tools" — like tools *I* (Claude) used in this chat to help you — I used code generation and file creation (for the `README.md`), but no external searches or data lookups, since everything was based on the code and analysis we built together in the conversation. Let me know which you were asking about if I read it wrong.
+
 ## Dashboard Contents
 
 | Chart | Description |
